@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  max-width: 95%;
+  height: 90vh;
+}
+
+.game-container {
+  display: flex;
+  height: 100%;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.sidebar {
+  width: 250px;
+  background: #2d3748;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4a5568;
+  padding-bottom: 10px;
+}
+
+#playersList {
+  font-size: 14px;
+}
+
+.player-item {
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #4a5568;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-master {
+  background: #ecc94b;
+  color: #2d3748;
+  font-weight: bold;
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #f7fafc;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: #fefefe;
+}
+
+.system-msg, .game-msg, .guess-msg {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.system-msg {
+  background: #e2e8f0;
+  color: #2d3748;
+  text-align: center;
+  margin: 0 auto 12px;
+}
+
+.guess-msg {
+  background: #bee3f8;
+  margin-right: auto;
+}
+
+.input-area {
+  display: flex;
+  padding: 15px;
+  background: #f7fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+#messageInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#sendBtn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background: #48bb78;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#sendBtn:hover {
+  background: #38a169;
+}
+
+.game-controls {
+  padding: 10px 20px;
+  background: #edf2f7;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+}
+
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#createBtn {
+  background: #4299e1;
+  color: white;
+}
+
+#joinBtn {
+  background: #48bb78;
+  color: white;
+}
+
+.timer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e53e3e;
+}
